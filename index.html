@@ -1,0 +1,49 @@
+<!--
+1.Create an HTML table structure with the headers you see in the image above.
+
+2.Also make sure you reference your index.js before the </body> tag.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel = "stylesheet" href="index.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="maincontroller" class="container">
+			<div id="topspots">
+				<p>San Diego Top Spots</p>
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Link</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="x in names">
+						<td>{{x.name}}</td>
+						<td>{{x.description}}</td>
+						<td><button class="btn"><a ng-href="https://www.google.com/maps?q={{x.location[0]}},{{x.location[1]}}">Get Directions</a></td></button>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+		</div>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="bower_components/angular/angular.js"</script>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script></script>
+		<script src="index.js"></script>
+	</body>
+</html>

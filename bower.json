@@ -1,0 +1,21 @@
+{
+  "name": "05-SanDiegoTopSpots",
+  "main": "index.html",
+  "homepage": "https://github.com/ReggieSibley/05-SanDiegoTopSpots",
+  "description": "Application that uses google maps to display popular san diego locations, redone with angular",
+  "authors": [
+    "reggie sibley"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "^3.1.0"
+  }
+}
